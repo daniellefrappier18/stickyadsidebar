@@ -1,0 +1,49 @@
+header {
+  position: fixed;
+  z-index: 3;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+}
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 95px 0 20px;
+}
+.row {
+  margin: 0 4em;
+}
+.content {
+  width: 75%;
+  float: left;
+}
+.siteSidebar {
+    width: 300px !important;
+    max-width: 300px !important;
+    padding: 0;
+    margin: 0;
+}
+@media only screen and ( min-width: 958px ) {
+    #sidebar {
+       position: absolute;
+    }
+    #sidebar.small {
+       position: relative !important;
+    }
+    #sidebar.fixed {
+        margin-top: 0 !important;
+        position: fixed;
+        top: 130px;
+    }
+    #sidebar.bottom {
+        position: absolute;
+        bottom: 0;
+    }
+    .siteSidebar {
+        float:right;
+    }
+}
